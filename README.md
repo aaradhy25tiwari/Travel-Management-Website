@@ -1,7 +1,8 @@
 # Travel-Website-DBS-project
 databases required:
-sign up:
-  I. google/ apple verification
+
+sign up: 
+  I. google/ apple verification 
   II. email verification:
     1. First Name
     2. Last Name
