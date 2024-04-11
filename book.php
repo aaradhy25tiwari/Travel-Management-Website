@@ -2,7 +2,7 @@
 <!-- Booking section starts -->
 <section class="booking">
     <h1 class="heading-title">Book Your Trip!</h1>
-    <form action="booking_form.php" methot="post" class="booking__form">
+    <form action="booking_form.php" method="post" class="booking__form">
         <div class="flex">
             <div class="inputBox">
                 <span>Name: </span>
