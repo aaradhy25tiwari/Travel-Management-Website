@@ -1,9 +1,9 @@
-Booking form:"\n"
-    ID (PRIMARY KEY): generates next number whenever a new booking is made.
-    Name: stores the name of the customer who makes the booking.
-    Email Address: stores email addresses for contact with the customer.
-    Phone Number: stores phone numbers for contact with the customer.
-    Address: stores the address of the customer.
-    Location: Stores the destination.
-    Arrival date: The date when the customer plans to arrive at the location.
-    Departure Date: The estimated departure date from the location.
+I. Booking form:<br>
+  1. ID (PRIMARY KEY): generates the next number whenever a new booking is made.<br>
+  2. Name: stores the name of the customer who makes the booking.<br>
+  3. Email Address: stores email addresses for contact with the customer.<br>
+  4. Phone Number: stores phone numbers for contact with the customer.<br>
+  5. Address: stores the address of the customer.<br>
+  6. Location: Stores the destination.<br>
+  7. Arrival date: The date when the customer plans to arrive at the location.<br>
+  8. Departure Date: The estimated departure date from the location.<br>
