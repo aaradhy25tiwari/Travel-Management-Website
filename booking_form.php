@@ -4,7 +4,7 @@
         $name = $_POST['name'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
-        $address = $_POST['adress'];
+        $address = $_POST['address'];
         $location  = $_POST['location'];
         $guests = $_POST[ 'guests'];
         $arrivals = $_POST['arrivals'];
