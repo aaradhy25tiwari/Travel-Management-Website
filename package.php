@@ -17,6 +17,7 @@
 
 <!--Header section starts here-->
 <section class="header">
+    <img src="images/logo.jpg" alt="">
     <a href="home.php" class="logo">Manzil</a>
     <nav class="navbar">
         <a href="home.php">home</a>
