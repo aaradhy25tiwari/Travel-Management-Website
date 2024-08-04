@@ -7,3 +7,4 @@ I. Booking form:<br>
   6. Location: Stores the destination.<br>
   7. Arrival date: The date when the customer plans to arrive at the location.<br>
   8. Departure Date: The estimated departure date from the location.<br>
+II. Login form
