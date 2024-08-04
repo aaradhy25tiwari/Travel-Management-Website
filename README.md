@@ -8,3 +8,5 @@ I. Booking form:<br>
   7. Arrival date: The date when the customer plans to arrive at the location.<br>
   8. Departure Date: The estimated departure date from the location.<br>
 II. Login form
+  1. username/ phone number 
+  2. password
