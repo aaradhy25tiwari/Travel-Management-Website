@@ -17,8 +17,8 @@ II. Login form:<br>
 
 ---
 
-![PHP](images/php.png)
-![CSS](images/CSS.png)
-![JS](images/JavaScript.png)
+![PHP](Logo/php.png)
+![CSS](Logo/CSS.png)
+![JS](Logo/JavaScript.png)
 
 <br>
