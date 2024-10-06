@@ -404,7 +404,7 @@ section{
     background: var(--white);
     text-align: center;
     box-shadow: var(--box-shadow);
-    user-select: none;
+    user-select: none; /*Feature not supported in Safari*/
 }
 
 .reviews .slide .stars{
