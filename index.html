@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manzil - Travel Management for Businesses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="./images/logo.jpeg" alt="Manzil Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Holidays</a></li>
+                <li><a href="#">Bus</a></li>
+                <li><a href="#">Trains</a></li>
+                <li><a href="#">Cabs</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <button class="login">Login</button>
+            <button class="signup">Signup</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="booking-section">
+        <form class="booking-form">
+            <div class="input-group">
+                <label for="from">Departure From</label>
+                <input type="text" id="from" name="from" placeholder="New Delhi">
+            </div>
+            <div class="input-group">
+                <label for="to">Going To</label>
+                <input type="text" id="to" name="to" placeholder="Mumbai">
+            </div>
+            <div class="input-group">
+                <label for="departure">Departure Date</label>
+                <input type="date" id="departure" name="departure">
+            </div>
+            <div class="input-group">
+                <label for="travellers">Travellers</label>
+                <input type="number" id="travellers" name="travellers" value="1">
+            </div>
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers">
+        <h2>Special Offers</h2>
+        <div class="offer-cards">
+            <div class="offer-card">
+                <img src="offer1.png" alt="Offer 1">
+                <p>Up to 20% OFF on International Flights</p>
+            </div>
+            <div class="offer-card">
+                <img src="offer2.png" alt="Offer 2">
+                <p>Flat 12% OFF on Domestic Flights</p>
+            </div>
+            <div class="offer-card">
+                <img src="offer3.png" alt="Offer 3">
+                <p>Flat 11% OFF on International Flights</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Hotels Section -->
+    <section class="recommended-hotels">
+        <h2>Recommended Hotels</h2>
+        <div class="hotel-cards">
+            <div class="hotel-card">
+                <img src="hotel1.png" alt="Zone By The Park Kolkata">
+                <p>Zone By The Park Kolkata</p>
+                <p>₹2,503</p>
+            </div>
+            <div class="hotel-card">
+                <img src="hotel2.png" alt="The Park Chennai">
+                <p>The Park Chennai</p>
+                <p>₹6,854</p>
+            </div>
+            <div class="hotel-card">
+                <img src="hotel3.png" alt="Radisson Blu Goa">
+                <p>Radisson Blu Goa</p>
+                <p>₹27,236</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section class="popular-destinations">
+        <h2>Flights to Popular Destinations</h2>
+        <div class="destination-cards">
+            <div class="destination-card">
+                <img src="./images/mumbai.jpg" alt="Mumbai" height="200">
+                <p>Mumbai</p>
+                <p>₹5,921</p>
+            </div>
+            <div class="destination-card">
+                <img src="./images/bangalore.jpg" alt="Bangalore" height="200">
+                <p>Bangalore</p>
+                <p>₹9,398</p>
+            </div>
+            <div class="destination-card">
+                <img src="./images/indore.jpg" alt="Indore" height="200">
+                <p>Indore</p>
+                <p>₹6,380</p>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </section>
+
+    <!-- Footer with Other Services -->
+    <footer>
+        <h2>Manzil's Other Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <img src="adventure.png" alt="Adventure">
+                <p>Adventure</p>
+            </div>
+            <div class="service-card">
+                <img src="cruise.png" alt="Cruise">
+                <p>Cruise</p>
+            </div>
+            <div class="service-card">
+                <img src="visa.png" alt="Visa">
+                <p>Visa</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
