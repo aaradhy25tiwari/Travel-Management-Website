@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="./css/book.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!--Header section starts here-->
+    <section class="header">
+        <img src="images/logo.jpg" alt="">
+        <a href="home.php" class="logo">Manzil</a>
+        <nav class="navbar">
+            <a href="index.php">home</a>
+            <a href="about.php">about</a>
+            <a href="package.php">package</a>
+            <a href="book.php">book</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!--Header section ends here-->
+
+    <div class="container">
+        <h2>Search for Available Travel Options</h2>
+        <form id="travelForm" method="POST" action="./php/search.php">
+            <label for="source">Source City</label>
+            <input type="text" id="source" name="source" placeholder="Enter Source City" required>
+
+            <label for="destination">Destination City</label>
+            <input type="text" id="destination" name="destination" placeholder="Enter Destination City" required>
+
+            <label for="date">Date of Travel</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="mode">Mode of Transport</label>
+            <select id="mode" name="mode" required>
+                <option value="flight">Flight</option>
+                <option value="train">Train</option>
+                <option value="bus">Bus</option>
+            </select>
+
+            <input type="submit" value="Search">
+        </form>
+
+        <div class="results" id="results">
+            <!-- Search results will be displayed here -->
+        </div>
+    </div>
+    <!--Footer section starts here-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.php"><i class="fas fa-angle-right"></i>home</a>
+                <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
+                <a href="package.php"><i class="fas fa-angle-right"></i>package</a>
+                <a href="book.php"><i class="fas fa-angle-right"></i>book</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i>ask questions</a>
+                <a href="#"><i class="fas fa-angle-right"></i>about us</a>
+                <a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
+                <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+                <a href="#"><i class="fas fa-phone"></i>+123-123-1234</a>
+                <a href="#"><i class="fas fa-envelope"></i>mitbduo@gmail.com</a>
+                <a href="#"><i class="fas fa-map"></i>Bengaluru, India - 560064</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            </div>
+        </div>
+
+        <div class="credit"> created by <span>Aaradhy Tiwari & Darpan Parkar</span> | the grind is real! </div>
+
+    </section>
+    <!--Footer section ends here-->
+
+
+    <script>
+        document.getElementById('date').setAttribute('min', new Date().toISOString().split('T')[0]);
+
+        document.getElementById('travelForm').addEventListener('submit', function (event) {
+            const travelDate = new Date(document.getElementById('date').value);
+            const today = new Date();
+
+            if (travelDate < today) {
+                alert("Please select a future date.");
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
