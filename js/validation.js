@@ -3,7 +3,6 @@ const phone_input = document.getElementById('phone')
 const email_input = document.getElementById('email')
 const password_input = document.getElementById('pass')
 const cpassword_input = document.getElementById('cpass')
-const blood_input = document.getElementById('blood')
 const error_message = document.getElementById('error-message')
 
 form.addEventListener('submit', (e) => {
@@ -88,3 +87,27 @@ allInputs.forEach(input => {
     }
   })
 })
+
+function fetchLocation() {
+    const pincode = document.getElementById("pincode").value;
+    if (!pincode) {
+        alert("Please enter a pincode.");
+        return;
+    }
+
+    fetch(`https://api.postalpincode.in/pincode/${pincode}`)
+        .then(response => response.json())
+        .then(data => {
+            if (data[0].Status === "Success") {
+                const postOffice = data[0].PostOffice[0];
+                document.getElementById("district").value = postOffice.District;
+                document.getElementById("state").value = postOffice.State;
+            } else {
+                alert("Invalid pincode or no data found.");
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching data:", error);
+            alert("An error occurred while fetching location data.");
+        });
+}

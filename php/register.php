@@ -16,6 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (mysqli_num_rows($result) > 0) {
             echo "Error: Email already exists! Please Login";
             mysqli_close($conn);
+            header("Location: ../login.html");
             exit();
         }
     }
@@ -29,6 +30,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dob = $_POST["dob"];
     $gender = $_POST["gender"];
     $country = $_POST["country"];
+    $pincode = $_POST['pincode'];
+    $city = $_POST['district'];
+    $state = $_POST['state'];
     
   
     /*// Check if password and confirm password match
@@ -38,14 +42,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }*/
   
     // Prepare SQL statement with parameterized query for security
-    $sql = "INSERT INTO signup (name, phone, email, password, dob, gender, country) VALUES (?, ?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO signup (name, phone, email, password, dob, gender, country, city, state, pincode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sssssss", $name, $phone, $email, $password, $dob, $gender, $country);
   
     // Execute the query
     if ($stmt->execute()) {
       echo "New user created successfully!";
-      header("Location: ./login.html");
+      header("Location: ../login.html");
     } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
     }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    <title>About | Manzil</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
@@ -186,7 +186,7 @@
         <div class="box">
             <h3>follow us</h3>
             <a href="#"><i class="fab fa-facebook"></i>facebook</a>
-            <a href="#"><i class="bi bi-twitter-x"></i></i>twitter</a>
+            <a href="#"><i class="fab fa-twitter"></i></i>twitter</a>
             <a href="#"><i class="fab fa-instagram"></i>instagram</a>
             <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
         </div>
