@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="./css/book.css">
+</head>
+<body>
+    <section class="header">
+        <img src="images/logo.jpg" alt="">
+        <a href="home.php" class="logo">Manzil</a>
+        <nav class="navbar">
+            <a href="home.php">home</a>
+            <a href="about.php">about</a>
+            <a href="package.php">package</a>
+            <a href="book.html">book</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!--Header section ends here-->
+    
+    <div class="container">
+        <h1>Book Your Journey</h1>
+        <form id="travelForm" action="./php/search.php" method="POST">
+            <label for="sourceCity">Source City:</label>
+            <input type="text" id="sourceCity" name="sourceCity" required>
+
+            <label for="destinationCity">Destination City:</label>
+            <input type="text" id="destinationCity" name="destinationCity" required>
+
+            <label for="travelDate">Date of Travel:</label>
+            <input type="date" id="travelDate" name="travelDate" pattern="\d{4}-\d{2}-\d{2}" required>
+
+            <label for="modeOfTransport">Mode of Transport:</label>
+            <select id="modeOfTransport" name="modeOfTransport" required>
+                <option value="flight">Flight</option>
+                <option value="train">Train</option>
+                <option value="bus">Bus</option>
+            </select>
+
+            <input type="submit" value="Find Transport">
+        </form>
+
+        <div id="results"></div>
+    </div>
+    <!--Footer section starts here-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.php"><i class="fas fa-angle-right"></i>home</a>
+                <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
+                <a href="package.php"><i class="fas fa-angle-right"></i>package</a>
+                <a href="book.php"><i class="fas fa-angle-right"></i>book</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i>ask questions</a>
+                <a href="#"><i class="fas fa-angle-right"></i>about us</a>
+                <a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
+                <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+                <a href="#"><i class="fas fa-phone"></i>+123-123-1234</a>
+                <a href="#"><i class="fas fa-envelope"></i>mitbduo@gmail.com</a>
+                <a href="#"><i class="fas fa-map"></i>Bengaluru, India - 560064</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            </div>
+        </div>
+
+        <div class="credit"> created by <span>Aaradhy Tiwari & Darpan Parkar</span> | the grind is real! </div>
+
+    </section>
+    <!--Footer section ends here-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/book.js"></script>
+</body>
+</html>
