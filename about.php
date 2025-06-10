@@ -17,7 +17,7 @@
 
 <!--Header section starts here-->
 <section class="header">
-    <img src="images/logo.jpg" alt="">
+    <img src="images/logo.jpeg">
     <a href="home.php" class="logo">Manzil</a>
     <nav class="navbar">
         <a href="home.php">home</a>
@@ -76,7 +76,7 @@
                 <p>“I recently started using Manzil and I couldn’t be more impressed with its functionality and user-friendly interface. The app has made a significant impact on my daily routine, streamlining tasks and providing valuable insights. The developers have clearly put a great deal of thought and effort into creating a top-notch app that caters to its users’ needs. I highly recommend [AppName] for anyone looking to simplify their life and increase productivity.”</p>
                 <h3>Harper Scott</h3>
                 <span>Traveller</span>
-                <img src="images/pic-1.jpg" alt="">
+                <img src="images/pic-1.jpeg" alt="Traveller">
             </div>
 
             <div class="swiper-slide slide">
